@@ -27,16 +27,51 @@
 
 /* Begin PBXFileReference section */
 		0C60DAF73DA4F8C214B414505EE9B4A9 /* SNPArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNPArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A9557FC1F8A00300074255B /* Interactor.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Interactor.xctemplate; sourceTree = "<group>"; };
-		1A9557FD1F8A00300074255B /* Unit Tests.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Unit Tests.xctemplate"; sourceTree = "<group>"; };
-		1A9557FE1F8A00300074255B /* Protocols.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protocols.xctemplate; sourceTree = "<group>"; };
-		1A9557FF1F8A00300074255B /* Models.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models.xctemplate; sourceTree = "<group>"; };
-		1A9558001F8A00300074255B /* View Controller.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "View Controller.xctemplate"; sourceTree = "<group>"; };
-		1A9558011F8A00300074255B /* Scene.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scene.xctemplate; sourceTree = "<group>"; };
-		1A9558021F8A00300074255B /* Presenter.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presenter.xctemplate; sourceTree = "<group>"; };
-		1A9558031F8A00300074255B /* Configurator.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configurator.xctemplate; sourceTree = "<group>"; };
-		1A9558041F8A00300074255B /* Router.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Router.xctemplate; sourceTree = "<group>"; };
-		1A9558051F8A004F0074255B /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		1A9558091F8A070A0074255B /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		1A95580D1F8A086F0074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A95580E1F8A086F0074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A95580F1F8A086F0074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A9558101F8A086F0074255B /* ___FILEBASENAME___Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Configurator.swift"; sourceTree = "<group>"; };
+		1A9558121F8A08870074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A9558131F8A08870074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A9558141F8A08870074255B /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		1A9558151F8A08870074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A9558171F8A08A10074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A9558181F8A08A10074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A9558191F8A08A10074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A95581A1F8A08A10074255B /* ___FILEBASENAME___Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Models.swift"; sourceTree = "<group>"; };
+		1A95581C1F8A08B90074255B /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		1A95581D1F8A08B90074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A95581E1F8A08B90074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A95581F1F8A08B90074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A9558211F8A08EF0074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A9558221F8A08EF0074255B /* ___FILEBASENAME___Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Protocols.swift"; sourceTree = "<group>"; };
+		1A9558231F8A08EF0074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A9558241F8A08F00074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A9558261F8A09020074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A9558271F8A09020074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A9558281F8A09020074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A9558291F8A09020074255B /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		1A95582D1F8A092D0074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A95582E1F8A092D0074255B /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		1A95582F1F8A092D0074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A9558301F8A092D0074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A9558311F8A09330074255B /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		1A9558321F8A09330074255B /* ___FILEBASENAME___Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Protocols.swift"; sourceTree = "<group>"; };
+		1A9558331F8A09330074255B /* ___FILEBASENAME___Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Models.swift"; sourceTree = "<group>"; };
+		1A9558341F8A09340074255B /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		1A9558351F8A09340074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A9558361F8A09340074255B /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		1A9558371F8A09340074255B /* ___FILEBASENAME___Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Configurator.swift"; sourceTree = "<group>"; };
+		1A9558381F8A09340074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A9558391F8A09340074255B /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		1A95583A1F8A09340074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A95583B1F8A09410074255B /* ___FILEBASENAME___InteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___InteractorTests.swift"; sourceTree = "<group>"; };
+		1A95583C1F8A09410074255B /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		1A95583D1F8A09410074255B /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		1A95583E1F8A09410074255B /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		1A95583F1F8A09410074255B /* ___FILEBASENAME___ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewControllerTests.swift"; sourceTree = "<group>"; };
+		1A9558401F8A09410074255B /* ___FILEBASENAME___PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___PresenterTests.swift"; sourceTree = "<group>"; };
 		39E79FB37D56B02BCD229E13718DFFB1 /* Pods_SNPArchitecture_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNPArchitecture_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA6F073A170FFEBFC6424F8A9A31CD2 /* Pods-SNPArchitecture_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPArchitecture_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4D4AB3636CDC826D94719F749A4C47E1 /* SNPArchitecture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNPArchitecture-prefix.pch"; sourceTree = "<group>"; };
@@ -98,7 +133,130 @@
 				FB732CAA2DC0516F49A5918BF05A0A35 /* SNPArchitecture-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SNPArchitecture";
+			path = "Target Support Files/SNPArchitecture";
+			sourceTree = "<group>";
+		};
+		1A95580B1F8A08510074255B /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				1A95582C1F8A091F0074255B /* Unit Tests.xctemplate */,
+				1A95582B1F8A09190074255B /* Router.xctemplate */,
+				1A95582A1F8A09100074255B /* Scene.xctemplate */,
+				1A9558251F8A08FA0074255B /* View Controller.xctemplate */,
+				1A9558201F8A08E80074255B /* Protocols.xctemplate */,
+				1A95581B1F8A08B00074255B /* Presenter.xctemplate */,
+				1A9558161F8A08930074255B /* Models.xctemplate */,
+				1A9558111F8A08770074255B /* Interactor.xctemplate */,
+				1A95580C1F8A085A0074255B /* Configurator.xctemplate */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		1A95580C1F8A085A0074255B /* Configurator.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A9558101F8A086F0074255B /* ___FILEBASENAME___Configurator.swift */,
+				1A95580D1F8A086F0074255B /* TemplateIcon.png */,
+				1A95580E1F8A086F0074255B /* TemplateIcon@2x.png */,
+				1A95580F1F8A086F0074255B /* TemplateInfo.plist */,
+			);
+			path = Configurator.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A9558111F8A08770074255B /* Interactor.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A9558141F8A08870074255B /* ___FILEBASENAME___Interactor.swift */,
+				1A9558151F8A08870074255B /* TemplateIcon.png */,
+				1A9558121F8A08870074255B /* TemplateIcon@2x.png */,
+				1A9558131F8A08870074255B /* TemplateInfo.plist */,
+			);
+			path = Interactor.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A9558161F8A08930074255B /* Models.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A95581A1F8A08A10074255B /* ___FILEBASENAME___Models.swift */,
+				1A9558171F8A08A10074255B /* TemplateIcon.png */,
+				1A9558181F8A08A10074255B /* TemplateIcon@2x.png */,
+				1A9558191F8A08A10074255B /* TemplateInfo.plist */,
+			);
+			path = Models.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A95581B1F8A08B00074255B /* Presenter.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A95581C1F8A08B90074255B /* ___FILEBASENAME___Presenter.swift */,
+				1A95581D1F8A08B90074255B /* TemplateIcon.png */,
+				1A95581E1F8A08B90074255B /* TemplateIcon@2x.png */,
+				1A95581F1F8A08B90074255B /* TemplateInfo.plist */,
+			);
+			path = Presenter.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A9558201F8A08E80074255B /* Protocols.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A9558221F8A08EF0074255B /* ___FILEBASENAME___Protocols.swift */,
+				1A9558211F8A08EF0074255B /* TemplateIcon.png */,
+				1A9558231F8A08EF0074255B /* TemplateIcon@2x.png */,
+				1A9558241F8A08F00074255B /* TemplateInfo.plist */,
+			);
+			path = Protocols.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A9558251F8A08FA0074255B /* View Controller.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A9558291F8A09020074255B /* ___FILEBASENAME___ViewController.swift */,
+				1A9558281F8A09020074255B /* TemplateIcon.png */,
+				1A9558271F8A09020074255B /* TemplateIcon@2x.png */,
+				1A9558261F8A09020074255B /* TemplateInfo.plist */,
+			);
+			path = "View Controller.xctemplate";
+			sourceTree = "<group>";
+		};
+		1A95582A1F8A09100074255B /* Scene.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A9558371F8A09340074255B /* ___FILEBASENAME___Configurator.swift */,
+				1A9558361F8A09340074255B /* ___FILEBASENAME___Interactor.swift */,
+				1A9558331F8A09330074255B /* ___FILEBASENAME___Models.swift */,
+				1A9558391F8A09340074255B /* ___FILEBASENAME___Presenter.swift */,
+				1A9558321F8A09330074255B /* ___FILEBASENAME___Protocols.swift */,
+				1A9558311F8A09330074255B /* ___FILEBASENAME___Router.swift */,
+				1A9558341F8A09340074255B /* ___FILEBASENAME___ViewController.swift */,
+				1A9558381F8A09340074255B /* TemplateIcon.png */,
+				1A9558351F8A09340074255B /* TemplateIcon@2x.png */,
+				1A95583A1F8A09340074255B /* TemplateInfo.plist */,
+			);
+			path = Scene.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A95582B1F8A09190074255B /* Router.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A95582E1F8A092D0074255B /* ___FILEBASENAME___Router.swift */,
+				1A95582F1F8A092D0074255B /* TemplateIcon.png */,
+				1A9558301F8A092D0074255B /* TemplateIcon@2x.png */,
+				1A95582D1F8A092D0074255B /* TemplateInfo.plist */,
+			);
+			path = Router.xctemplate;
+			sourceTree = "<group>";
+		};
+		1A95582C1F8A091F0074255B /* Unit Tests.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1A95583B1F8A09410074255B /* ___FILEBASENAME___InteractorTests.swift */,
+				1A9558401F8A09410074255B /* ___FILEBASENAME___PresenterTests.swift */,
+				1A95583F1F8A09410074255B /* ___FILEBASENAME___ViewControllerTests.swift */,
+				1A95583D1F8A09410074255B /* TemplateIcon.png */,
+				1A95583C1F8A09410074255B /* TemplateIcon@2x.png */,
+				1A95583E1F8A09410074255B /* TemplateInfo.plist */,
+			);
+			path = "Unit Tests.xctemplate";
 			sourceTree = "<group>";
 		};
 		506E49969F5735198D5FD2FDDBBA6784 /* Pods-SNPArchitecture_Tests */ = {
@@ -130,6 +288,7 @@
 		7446EBB3FD637F409F3586FFB12961FE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
+				162739E4F8CA0094A7302B086D031EE5 /* Support Files */,
 				A4D4A9B18EB8A4E4B3E9020F66B8EFDA /* SNPArchitecture */,
 			);
 			name = "Development Pods";
@@ -149,20 +308,11 @@
 		A4D4A9B18EB8A4E4B3E9020F66B8EFDA /* SNPArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				1A9558051F8A004F0074255B /* Makefile */,
-				1A9558031F8A00300074255B /* Configurator.xctemplate */,
-				1A9557FC1F8A00300074255B /* Interactor.xctemplate */,
-				1A9557FF1F8A00300074255B /* Models.xctemplate */,
-				1A9558021F8A00300074255B /* Presenter.xctemplate */,
-				1A9557FE1F8A00300074255B /* Protocols.xctemplate */,
-				1A9558041F8A00300074255B /* Router.xctemplate */,
-				1A9558011F8A00300074255B /* Scene.xctemplate */,
-				1A9557FD1F8A00300074255B /* Unit Tests.xctemplate */,
-				1A9558001F8A00300074255B /* View Controller.xctemplate */,
-				162739E4F8CA0094A7302B086D031EE5 /* Support Files */,
+				1A95580B1F8A08510074255B /* Templates */,
+				1A9558091F8A070A0074255B /* Makefile */,
 			);
 			name = SNPArchitecture;
-			path = ../..;
+			path = ../../SNPArchitecture;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -245,7 +395,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -304,7 +454,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -312,14 +464,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -495,7 +653,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -503,15 +663,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",

@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SNPArchitecture/Classes/**/*'
+  s.source_files = 'SNPArchitecture/**/*'
   
   # s.resource_bundles = {
   #   'SNPArchitecture' => ['SNPArchitecture/Assets/*.png']
