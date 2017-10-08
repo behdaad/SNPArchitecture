@@ -1,0 +1,22 @@
+{
+  "name": "SNPArchitecture",
+  "version": "0.1.0",
+  "summary": "A short description of SNPArchitecture.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/behdad-keynejad/SNPArchitecture",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "behdad-keynejad": "behdad.keynejad@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/behdad-keynejad/SNPArchitecture.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SNPArchitecture/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module SNPArchitecture {
+  umbrella header "SNPArchitecture-umbrella.h"
+
+  export *
+  module * { export * }
+}
