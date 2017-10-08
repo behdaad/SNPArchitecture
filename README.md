@@ -26,7 +26,9 @@
 <!---->
 <!--## License-->
 
-SNPArchitecture is available under the MIT license. See the LICENSE file for more info.
+<!--SNPArchitecture is available under the MIT license. See the LICENSE file for more info.-->
+
+TODO: Write a comprehensive doc: @alirp88
 
 To learn more about Clean Swift and the VIP cycle, read:
 
