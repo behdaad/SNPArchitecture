@@ -1,47 +1,38 @@
 # SNPArchitecture
 
-<!--[![CI Status](http://img.shields.io/travis/behdad-keynejad/SNPArchitecture.svg?style=flat)](https://travis-ci.org/behdad-keynejad/SNPArchitecture)-->
-<!--[![Version](https://img.shields.io/cocoapods/v/SNPArchitecture.svg?style=flat)](http://cocoapods.org/pods/SNPArchitecture)-->
-<!--[![License](https://img.shields.io/cocoapods/l/SNPArchitecture.svg?style=flat)](http://cocoapods.org/pods/SNPArchitecture)-->
-<!--[![Platform](https://img.shields.io/cocoapods/p/SNPArchitecture.svg?style=flat)](http://cocoapods.org/pods/SNPArchitecture)-->
+Here lies the arcitectural foundation for the years to come, for the generations to come. Take a moment and pay respect to our fallen brothers and sisters, whom had been beaten, broken and scarred, but paved the way on which we tread today. 
 
-<!--## Example-->
-<!---->
-<!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
-<!---->
-<!--## Requirements-->
-<!---->
-<!--## Installation-->
-<!---->
-<!--SNPArchitecture is available through [CocoaPods](http://cocoapods.org). To install-->
-<!--it, simply add the following line to your Podfile:-->
-<!---->
-<!--```ruby-->
-<!--pod 'SNPArchitecture'-->
-<!--```-->
-<!---->
-<!--## Author-->
-<!---->
-<!--behdad-keynejad, behdad.keynejad@gmail.com-->
-<!---->
-<!--## License-->
-
-<!--SNPArchitecture is available under the MIT license. See the LICENSE file for more info.-->
-
-TODO: Write a comprehensive doc: @alirp88
-
-To learn more about Clean Swift and the VIP cycle, read:
+To learn about basics of Clean Swift and VIP cycle, read:
 
 http://clean-swift.com/clean-swift-ios-architecture
 
-There is a sample app available at:
+But SNPArchitecture is not a exact implementation if Clean Swift, it's been modified to accomodate Snapp's requirements. 
 
-https://github.com/Clean-Swift/CleanStore
 
 To install the Clean Swift Xcode templates, run:
 
-> make install_templates
+```
+make install_templates
+```
 
 To uninstall the Clean Swift Xcode templates, run:
 
-> make uninstall_templates
+```
+make uninstall_templates
+```
+
+Every push to this repository sends an automatic message to `#ios_scrum_team` Slack channel. You need to pull changes and manually apply new templates by running `make install_templates`. This process can be automated adding a git hook to your local installation of Git. 
+
+1. Create a file named `post-merge` under `.git/hooks` and fill it with:
+
+```
+#!/bin/sh
+make install_templates
+```
+
+2. Add execution permissions to `post-merge` using:
+```
+chmod +x post-merge
+```
+
+Voila! Every time you pull this repo, templates will be automatically installed in your Xcode templates folder. 
