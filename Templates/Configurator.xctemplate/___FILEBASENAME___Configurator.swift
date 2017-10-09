@@ -33,16 +33,3 @@ class ___VARIABLE_sceneName___Configurator {
         return viewController
     }
 }
-
-extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterProtocol {
-    func navigateTo<#Scene#>(viewController: UIViewController) {
-        // Create scene using its configurator
-        // Call config method on scene's interactor
-    }
-}
-
-// test git hooks
-// test git hooks 2
-// git hooks 3
-// 4
-// 5
