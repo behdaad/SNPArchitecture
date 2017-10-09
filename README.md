@@ -36,3 +36,6 @@ chmod +x post-merge
 ```
 
 Voila! Every time you pull this repo, templates will be automatically installed in your Xcode templates folder. 
+
+**Bonus**
+Since it's not a remote possibility that you'll someday commit and push changes to this repository, you may want to add a `post-commit` hook too. It will be the same as `post-merge`. 
