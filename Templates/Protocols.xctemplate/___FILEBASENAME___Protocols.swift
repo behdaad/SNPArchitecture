@@ -12,8 +12,12 @@
 
 import UIKit
 
-protocol ___VARIABLE_sceneName___InteractorProtocol: class {
-    func configViewOnLoad() -> Void
+@objc protocol ___VARIABLE_sceneName___InteractorProtocol: class {
+    @objc optional func viewDidLoad() -> Void
+    @objc optional func viewWillAppear(_ animated: Bool) -> Void
+    @objc optional func viewDidAppear(_ animated: Bool) -> Void
+    @objc optional func viewWillDisappear(_ animated: Bool) -> Void
+    @objc optional func viewDidDisappear(_ animated: Bool) -> Void
 }
 
 protocol ___VARIABLE_sceneName___PresenterProtocol: class {

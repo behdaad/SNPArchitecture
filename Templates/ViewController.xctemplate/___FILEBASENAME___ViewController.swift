@@ -15,19 +15,18 @@ import UIKit
 class ___VARIABLE_sceneName___ViewController: UIViewController {
     // MARK: - Properties
     var interactor: ___VARIABLE_sceneName___InteractorProtocol!
-    var sceneView: ___VARIABLE_sceneName___View!
+    var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.load()
     
     // MARK: - Methods
     // MARK: UIViewController
     override func loadView() {
-        sceneView = Bundle.load()
-        view = sceneView
+        view = <#scene#>View
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor.viewDidLoad?()
         
-        interactor.configViewOnLoad()
     }
 }
 
