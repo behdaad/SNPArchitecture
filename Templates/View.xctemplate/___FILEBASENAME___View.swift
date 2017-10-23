@@ -12,7 +12,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___View: UIView {
+class ___VARIABLE_sceneName___View: SNPView {
     // MARK: - Properties
 
     // MARK: - Methods
