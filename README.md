@@ -33,7 +33,7 @@ Unlike Apple's MVC, View in SNPArchitecture is both View and View Controller, be
 
 View handles all the view logic, it knows how to show stuff on the screen and relays user's interactions to interactor. In order to better separate View and View Controller responsibilities, everything purely view-related stuff (such as setting static labels titles) goes in UIView subclasses and lifecycle-related stuff (pretty much everything else) goes into UIViewController subclasses.
 
-As you can see in the VIP Cycle, view directly notifies the Interactor of user interactions. Methods would be of kind `userTappedOnSomeButton:` and the like.
+As you can see in the VIP Cycle, view directly notifies the Interactor of user interactions. Methods would be of kind `userTapped(on button:)` and the like.
 
 On the other hand, Presenter calls methods like `show(viewModel:)` on the View. Notice how Presenter passes a `View Model` to the view, which is a simple data structure comprised of primitive types such as `Int`, `String` and such.
 
@@ -43,7 +43,7 @@ Interactor contains all the business logic of a scene. It knows how to fetch dat
 
 Interactor doesn't talk to the View directly, instead it asks the Presenter to present some stuff on the View with methods like `present(businessModel:)`. Notice how it passes a `Business Model` to Presenter, and Presenter itself translates this possibly complex data structure to a simple View Model.
 
-On the other hand, it listens on user interactions coming from the View, such as `userTappedOnSomeButton:`.
+On the other hand, it listens on user interactions coming from the View, such as `userTapped(on button:)`.
 
 #### Presenter
 
