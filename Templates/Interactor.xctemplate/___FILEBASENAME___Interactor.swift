@@ -12,7 +12,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___Interactor {
+class ___VARIABLE_sceneName___Interactor: SNPInteractor {
     // MARK: - Properties
     var presenter: ___VARIABLE_sceneName___PresenterProtocol!
     var router: ___VARIABLE_sceneName___RouterProtocol!

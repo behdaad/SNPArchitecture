@@ -12,25 +12,12 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: SNPViewController, LifetimeTrackable {
+class ___VARIABLE_sceneName___ViewController: SNPViewController {
     // MARK: - Properties
     var interactor: ___VARIABLE_sceneName___InteractorProtocol!
     var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.load()
-    static var lifetimeConfiguration = LifetimeConfiguration(maxCount: 1)
     
     // MARK: - Methods
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-
-        trackLifetime()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        trackLifetime()
-    }
-
     // MARK: UIViewController
     override func loadView() {
         view = <#scene#>View

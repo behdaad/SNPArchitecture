@@ -12,7 +12,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___Presenter {
+class ___VARIABLE_sceneName___Presenter: SNPPresenter {
     // MARK: - Properties
     weak var viewController: ___VARIABLE_sceneName___ViewControllerProtocol!
     

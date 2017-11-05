@@ -12,7 +12,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___Router {
+class ___VARIABLE_sceneName___Router: SNPRouter {
     // MARK: - Properties
     
     // MARK: - Methods

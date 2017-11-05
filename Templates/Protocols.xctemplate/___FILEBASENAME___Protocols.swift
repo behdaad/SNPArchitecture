@@ -12,7 +12,7 @@
 
 import UIKit
 
-@objc protocol ___VARIABLE_sceneName___InteractorProtocol: class {
+@objc protocol ___VARIABLE_sceneName___InteractorProtocol: SNPInteractorProtocol {
     @objc optional func viewDidLoad() -> Void
     @objc optional func viewWillAppear(_ animated: Bool) -> Void
     @objc optional func viewDidAppear(_ animated: Bool) -> Void
@@ -20,14 +20,14 @@ import UIKit
     @objc optional func viewDidDisappear(_ animated: Bool) -> Void
 }
 
-protocol ___VARIABLE_sceneName___PresenterProtocol: class {
+protocol ___VARIABLE_sceneName___PresenterProtocol: SNPPresenterProcol {
     func present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel) -> Void
 }
 
-protocol ___VARIABLE_sceneName___ViewControllerProtocol: class {
+protocol ___VARIABLE_sceneName___ViewControllerProtocol: SNPViewControllerProtocol {
     func display(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) -> Void
 }
 
-protocol ___VARIABLE_sceneName___RouterProtocol: class {
+protocol ___VARIABLE_sceneName___RouterProtocol: SNPRouterProtocol {
     func navigateTo<#Scene#>(presentingViewController: UIViewController) -> Void
 }

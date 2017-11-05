@@ -12,7 +12,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___Configurator {
+class ___VARIABLE_sceneName___Configurator: SNPConfigurator {
     // MARK: - Properties
     
     // MARK: - Methods
