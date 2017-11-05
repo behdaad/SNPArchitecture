@@ -12,11 +12,11 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: SNPViewController {
+class ___VARIABLE_sceneName___ViewController: SNPViewController, LifetimeTrackable {
     // MARK: - Properties
     var interactor: ___VARIABLE_sceneName___InteractorProtocol!
     var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.load()
-    static var lifetimeConfiguration: LifetimeConfiguration = (identifier: "___VARIABLE_sceneName___ViewController", maxCount: 1)
+    static var lifetimeConfiguration = LifetimeConfiguration(maxCount: 1)
     
     // MARK: - Methods
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
