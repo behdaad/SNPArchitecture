@@ -22,7 +22,7 @@ class ___VARIABLE_sceneName___Interactor: SNPInteractor {
 }
 
 extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___InteractorProtocol {
-    func configViewOnLoad() {
+    func viewDidLoad() {
         
     }
 }

@@ -20,6 +20,5 @@ class ___VARIABLE_sceneName___View: SNPView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-
     }
 }

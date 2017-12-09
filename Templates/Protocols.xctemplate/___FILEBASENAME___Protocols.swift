@@ -20,7 +20,7 @@ import UIKit
     @objc optional func viewDidDisappear(_ animated: Bool) -> Void
 }
 
-protocol ___VARIABLE_sceneName___PresenterProtocol: SNPPresenterProcol {
+protocol ___VARIABLE_sceneName___PresenterProtocol: SNPPresenterProtocol {
     func present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel) -> Void
 }
 
