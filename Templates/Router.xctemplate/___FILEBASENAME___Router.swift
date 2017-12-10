@@ -19,7 +19,7 @@ class ___VARIABLE_sceneName___Router: SNPRouter {
 }
 
 extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterProtocol {
-    func navigateTo<#Scene#>(presentingViewController: UIViewController) {
+    func navigateTo<#Scene#>(presentingViewController: SNPViewController) {
         // Create scene using its configurator
         // Call config method on scene's interactor
         let newViewController = <#Scene#>Configurator.build()

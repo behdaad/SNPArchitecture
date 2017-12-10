@@ -29,5 +29,5 @@ protocol ___VARIABLE_sceneName___ViewControllerProtocol: SNPViewControllerProtoc
 }
 
 protocol ___VARIABLE_sceneName___RouterProtocol: SNPRouterProtocol {
-    func navigateTo<#Scene#>(presentingViewController: UIViewController) -> Void
+    func navigateTo<#Scene#>(presentingViewController: SNPViewController) -> Void
 }
