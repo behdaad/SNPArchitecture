@@ -61,7 +61,7 @@ Each Manager is responsible for addressing issues related to that class. Fetchin
 
 ### Dispatch System
 
-Since we are developing SNPArchitecture for an eventful and stateful app, traditional delegation and callback patterns won't accomodate our needs. Consider the state of the `Ride` model. Every change in ride's state results in changes all over the application, so it's better to use the notification pattern. Since iOS's own NotificationCenter is a barebone framework, we'll use (SwiftNotificationCenter)[https://cocoapods.org/pods/SwiftNotificationCenter] which provices a simple API to post and observe notifications in a protocol-friendly manner. 
+Since we are developing SNPArchitecture for an eventful and stateful app, traditional delegation and callback patterns won't accomodate our needs. Consider the state of the `Ride` model. Every change in ride's state results in changes all over the application, so it's better to use the notification pattern. Since iOS's own NotificationCenter is a barebone framework, we'll use [SwiftNotificationCenter](https://cocoapods.org/pods/SwiftNotificationCenter) which provices a simple API to post and observe notifications in a protocol-friendly manner. 
 
 ## Installation
 
