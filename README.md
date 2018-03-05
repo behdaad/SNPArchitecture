@@ -4,16 +4,16 @@ Here lies the arcitectural foundation for the years to come, for the generations
 
 ## Quick Start
 
-There have been multiple efforts to implement [Uncle Bob](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)'s [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) such as [VIPER](https://www.objc.io/issues/13-architecture/viper/) and Uber's [Riblets](https://eng.uber.com/new-rider-app/) but none of them were suitable for Snapp's current situation. Therefore, we decided to come up with our own, not giving it a particular name, but to merely call it `SNPArchitecture`.
+There have been many efforts to implement [Uncle Bob](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)'s [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) such as [VIPER](https://www.objc.io/issues/13-architecture/viper/) and Uber's [RIBs](https://github.com/uber/RIBs) but none of them were suitable for Snapp's current situation. Therefore, we decided to come up with our own, not giving it a particular namemerely calling it `SNPArchitecture`.
 
-To put it in simple terms, it is something between VIPER and Riblets, so if you're familiar with VIPER, you should be able to grasp it comfortably. Reading [Clean Swift](http://clean-swift.com/clean-swift-ios-architecture) is a good first step, because most of the notions are the same.
-The key difference between SNPArchitecture and VIPER lies in the `VIP Cycle` it uses.
+To put it in simple terms, it is a combination of VIPER and RIBs, so if you're familiar with VIPER, you should be able to grasp it comfortably. Reading [Clean Swift](http://clean-swift.com/clean-swift-ios-architecture) is a good first step, because most of the notions are the same.
+The key difference is SNPArchitecture's use of `VIP Cycle`.
 
 ![VIP Cycle](screens/VIP-Cycle.png)
 
 ## Components
 
-An app is divided to multiple modules based on screen/feature, we'll call each a `Scene`. A scene is comprised of multiple classes: View, Interactor, Presenter, Router and Configurator.
+An app is divided to modules based on screen/feature, which we'll call a `Scene`. A scene is comprised of these classes: View, Interactor, Presenter, Router and Configurator.
 
 View handles view logic, Interactor handles business logic, Presenter handles presentation logic, Router handles routing logic and Configurator will act as the interface of the Scene. We'll discuss all of them shortly.
 
