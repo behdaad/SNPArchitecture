@@ -31,7 +31,7 @@ class ___VARIABLE_sceneName___ViewController: SNPViewController {
 }
 
 extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewControllerProtocol {
-    func display(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
-        
-    }
+//    func show(viewModel: ___VARIABLE_sceneName___.SomeViewModel) {
+//        
+//    }
 }

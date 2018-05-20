@@ -20,9 +20,8 @@ class ___VARIABLE_sceneName___Presenter: SNPPresenter {
 }
 
 extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterProtocol {
-    func present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel) {
-        // Translate businessModel to viewModel
-        
-        viewController.display(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
-    }
+//    func present(businessModel: ___VARIABLE_sceneName___.SomeBusinessModel) {
+//        // Translate SomeBusinessModel to SomeViewModel
+//        viewController.show(viewModel: ___VARIABLE_sceneName___.SomeViewModel)
+//    }
 }

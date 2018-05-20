@@ -21,13 +21,13 @@ import UIKit
 }
 
 protocol ___VARIABLE_sceneName___PresenterProtocol: SNPPresenterProtocol {
-    func present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel) -> Void
+//    func present(businessModel: ___VARIABLE_sceneName___.SomeBusinessModel) -> Void
 }
 
 protocol ___VARIABLE_sceneName___ViewControllerProtocol: SNPViewControllerProtocol {
-    func display(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) -> Void
+//    func show(viewModel: ___VARIABLE_sceneName___.SomeViewModel) -> Void
 }
 
 protocol ___VARIABLE_sceneName___RouterProtocol: SNPRouterProtocol {
-    func navigateTo<#Scene#>(presentingViewController: SNPViewController) -> Void
+//    func navigateTo<#Scene#>(presentingViewController: SNPViewController) -> Void
 }
