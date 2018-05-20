@@ -12,12 +12,7 @@
 
 import UIKit
 
-@objc protocol ___VARIABLE_sceneName___InteractorProtocol: SNPInteractorProtocol {
-    @objc optional func viewDidLoad() -> Void
-    @objc optional func viewWillAppear(_ animated: Bool) -> Void
-    @objc optional func viewDidAppear(_ animated: Bool) -> Void
-    @objc optional func viewWillDisappear(_ animated: Bool) -> Void
-    @objc optional func viewDidDisappear(_ animated: Bool) -> Void
+protocol ___VARIABLE_sceneName___InteractorProtocol: SNPInteractorProtocol {
 }
 
 protocol ___VARIABLE_sceneName___PresenterProtocol: SNPPresenterProtocol {
