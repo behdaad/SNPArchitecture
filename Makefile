@@ -8,7 +8,6 @@ install_templates:
 	mkdir -p $(SCENE_DIR)
 	cp $(TEMPLATES_DIR)/Configurator.xctemplate/___FILEBASENAME___Configurator.swift $(SCENE_DIR)/___FILEBASENAME___Configurator.swift
 	cp $(TEMPLATES_DIR)/Interactor.xctemplate/___FILEBASENAME___Interactor.swift $(SCENE_DIR)/___FILEBASENAME___Interactor.swift
-	cp $(TEMPLATES_DIR)/Models.xctemplate/___FILEBASENAME___Models.swift $(SCENE_DIR)/___FILEBASENAME___Models.swift
 	cp $(TEMPLATES_DIR)/Presenter.xctemplate/___FILEBASENAME___Presenter.swift $(SCENE_DIR)/___FILEBASENAME___Presenter.swift
 	cp $(TEMPLATES_DIR)/Protocols.xctemplate/___FILEBASENAME___Protocols.swift $(SCENE_DIR)/___FILEBASENAME___Protocols.swift
 	cp $(TEMPLATES_DIR)/Router.xctemplate/___FILEBASENAME___Router.swift $(SCENE_DIR)/___FILEBASENAME___Router.swift
