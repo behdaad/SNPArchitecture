@@ -14,6 +14,7 @@ import UIKit
 
 class ___VARIABLE_sceneName___Router: SNPRouter {
     // MARK: - Properties
+    weak var viewController: ___VARIABLE_sceneName___ViewController!
     
     // MARK: - Methods
 }
@@ -23,9 +24,5 @@ extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterProtocol
         // Create scene using its configurator
         // Call config method on scene's interactor
         let newViewController = <#Scene#>Configurator.build()
-        
-        if let navigationController = presentingViewController.navigationController {
-            navigationController.pushViewController(newViewController, animated: true)
-        }
     }
 }
