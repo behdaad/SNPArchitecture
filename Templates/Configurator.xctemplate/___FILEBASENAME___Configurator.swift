@@ -30,6 +30,8 @@ class ___VARIABLE_sceneName___Configurator: SNPConfigurator {
         
         presenter.viewController = viewController
         
+        router.viewController = viewController
+        
         return viewController
     }
 }
