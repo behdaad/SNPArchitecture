@@ -116,20 +116,6 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Configurator</string>
-			<key>Description</key>
-			<string>The configurator file name</string>
-			<key>Identifier</key>
-			<string>configuratorFileName</string>
-			<key>Name</key>
-			<string>Configurator File Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
 	</array>
 	<key>Platforms</key>
 	<array>
