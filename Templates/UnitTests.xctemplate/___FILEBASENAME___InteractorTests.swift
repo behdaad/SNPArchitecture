@@ -11,6 +11,7 @@
 //
 
 import XCTest
+import SNPUtilities
 @testable import ___PROJECTNAMEASIDENTIFIER___
 
 class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
