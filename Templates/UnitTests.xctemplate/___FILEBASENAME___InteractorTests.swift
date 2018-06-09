@@ -34,24 +34,19 @@ class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
     
     // MARK: Mocks
     class ___VARIABLE_sceneName___PresenterMock: ___VARIABLE_sceneName___PresenterProtocol {
-        var presentSomethingCalled = false
-        
-        func presentSomething(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel) {
-            presentSomethingCalled = true
-        }
     }
     
     // MARK: - Tests
     func testDoSomething() {
         // Given
-        let mockPresenter = ___VARIABLE_sceneName___PresenterProtocol()
+        let mockPresenter = ___VARIABLE_sceneName___PresenterMock()
         testInteractor.presenter = mockPresenter
-        let request = ___VARIABLE_sceneName___.Something.Request()
+//        let request = ___VARIABLE_sceneName___.Something.Request()
         
         // When
-        testInteractor.doSomething(request: request)
+//        testInteractor.doSomething(request: request)
         
         // Then
-        XCTAssertTrue(mockPresenter.presentSomethingCalled, "doSomething(request:) should ask the presenter to format the result")
+//        XCTAssertTrue(mockPresenter.presentSomethingCalled, "doSomething(request:) should ask the presenter to format the result")
     }
 }

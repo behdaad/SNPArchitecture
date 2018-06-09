@@ -34,11 +34,6 @@ class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
     
     // MARK: Mocks
     class ___VARIABLE_sceneName___ViewControllerMock: ___VARIABLE_sceneName___ViewControllerProtocol {
-        var displayCalled = false
-        
-        func display(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
-            displayCalled = true
-        }
     }
     
     // MARK: - Tests
@@ -46,12 +41,12 @@ class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
         // Given
         let mockViewController = ___VARIABLE_sceneName___ViewControllerMock()
         testPresenter.viewController = mockViewController
-        let businessModel = ___VARIABLE_sceneName___.Something.BusinessModel()
+//        let businessModel = ___VARIABLE_sceneName___.Something.BusinessModel()
         
         // When
-        testPresenter.present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel)
+//        testPresenter.present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel)
         
         // Then
-        XCTAssertTrue(mockViewController.displayCalled, "presentSomething(response:) should ask the view controller to display the result")
+//        XCTAssertTrue(mockViewController.displayCalled, "presentSomething(response:) should ask the view controller to display the result")
     }
 }

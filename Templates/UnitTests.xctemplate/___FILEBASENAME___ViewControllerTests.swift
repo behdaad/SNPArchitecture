@@ -43,11 +43,6 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
     
     // MARK: Mocks
     class ___VARIABLE_sceneName___InteractorMock: ___VARIABLE_sceneName___InteractorProtocol {
-        var doSomethingCalled = false
-        
-        func doSomething(request: ___VARIABLE_sceneName___.Something.Request) {
-            doSomethingCalled = true
-        }
     }
     
     // MARK: - Tests
@@ -65,11 +60,11 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
     
     func testDisplaySomething() {
         // Given
-        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
+//        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
         
         // When
         loadView()
-        testViewController.display(viewModel: viewModel)
+//        testViewController.display(viewModel: viewModel)
         
         // Then
         //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
