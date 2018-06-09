@@ -14,7 +14,14 @@ import UIKit
 
 class ___VARIABLE_sceneName___ViewController: SNPViewController {
     // MARK: - Properties
-    var interactor: ___VARIABLE_sceneName___InteractorProtocol!
+    var <#scene#>Interactor: ___VARIABLE_sceneName___InteractorProtocol! {
+        get {
+            return interactor as! ___VARIABLE_sceneName___InteractorProtocol
+        }
+        set {
+            interactor = newValue
+        }
+    }
     var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.load()
     
     // MARK: - Methods
@@ -25,8 +32,6 @@ class ___VARIABLE_sceneName___ViewController: SNPViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interactor.viewDidLoad?()
-        
     }
 }
 
