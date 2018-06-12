@@ -97,4 +97,4 @@ chmod +x post-merge
 cp post-merge post-commit
 ```
 
-Vilà! Every time you pull this repo, templates will be automatically installed in your Xcode templates folder.
+Voilà! Every time you pull this repo, templates will be automatically installed in your Xcode templates folder.
