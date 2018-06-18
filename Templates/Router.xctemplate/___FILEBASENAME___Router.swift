@@ -14,7 +14,7 @@ import UIKit
 
 class ___VARIABLE_sceneName___Router: SNPRouter {
     // MARK: - Properties
-    weak var <#scene#>viewControllerProtocol: ___VARIABLE_sceneName___ViewControllerProtocol!
+    weak var viewControllerProtocol: ___VARIABLE_sceneName___ViewControllerProtocol!
     
     // MARK: - Methods
 }
