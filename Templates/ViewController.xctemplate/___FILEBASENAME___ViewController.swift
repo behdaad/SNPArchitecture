@@ -10,6 +10,7 @@
 //  iOS and Mac projects, see http://clean-swift.com
 //
 
+import SNPUtilities
 import UIKit
 
 class ___VARIABLE_sceneName___ViewController: SNPViewController {
