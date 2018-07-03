@@ -16,7 +16,6 @@ class ___VARIABLE_sceneName___Interactor: SNPInteractor {
     // MARK: - Properties
     var presenter: ___VARIABLE_sceneName___PresenterProtocol!
     var router: ___VARIABLE_sceneName___RouterProtocol!
-    weak var viewController: ___VARIABLE_sceneName___ViewControllerProtocol!
     
     // MARK: - Methods
 }
