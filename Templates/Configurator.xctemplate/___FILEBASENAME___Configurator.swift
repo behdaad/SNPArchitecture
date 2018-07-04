@@ -16,7 +16,7 @@ class ___VARIABLE_sceneName___Configurator: SNPConfigurator {
     // MARK: - Properties
     
     // MARK: - Methods
-    class func build() -> ___VARIABLE_sceneName___Interactor {
+    class func build() -> (___VARIABLE_sceneName___ViewController, ___VARIABLE_sceneName___Interactor) {
         let viewController = ___VARIABLE_sceneName___ViewController()
         let interactor = ___VARIABLE_sceneName___Interactor()
         let presenter = ___VARIABLE_sceneName___Presenter()
@@ -32,6 +32,6 @@ class ___VARIABLE_sceneName___Configurator: SNPConfigurator {
         
         router.viewControllerProtocol = viewController
         
-        return interactor
+        return (viewController, interactor)
     }
 }
