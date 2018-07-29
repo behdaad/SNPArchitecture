@@ -24,7 +24,6 @@ class ___VARIABLE_sceneName___Configurator: SNPConfigurator {
         
         viewController.interactor = interactor
         
-        interactor.viewController = viewController
         interactor.presenter = presenter
         interactor.router = router
         
