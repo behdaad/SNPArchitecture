@@ -23,6 +23,6 @@ extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterProtocol
 //    func navigateTo<#Scene#>() {
 //        // Create scene using its configurator
 //        // Call config method on scene's interactor
-//        let newViewController = <#Scene#>Configurator.build()
+//        let newViewController = <#Scene#>Configurator.build().viewControllerProtocol.viewController
 //    }
 }
