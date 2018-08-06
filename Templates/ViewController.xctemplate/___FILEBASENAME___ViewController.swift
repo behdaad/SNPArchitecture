@@ -23,7 +23,7 @@ class ___VARIABLE_sceneName___ViewController: SNPViewController {
             interactor = newValue
         }
     }
-    var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.main.load()
+    private var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.main.load()
     
     // MARK: - Methods
     // MARK: UIViewController
