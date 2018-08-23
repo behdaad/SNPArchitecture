@@ -14,6 +14,8 @@ install_templates:
 	cp $(TEMPLATES_DIR)/ViewController.xctemplate/___FILEBASENAME___ViewController.swift $(SCENE_DIR)/___FILEBASENAME___ViewController.swift
 	cp $(TEMPLATES_DIR)/View.xctemplate/___FILEBASENAME___View.swift $(SCENE_DIR)/___FILEBASENAME___View.swift
 	cp $(TEMPLATES_DIR)/View.xctemplate/___FILEBASENAME___View.xib $(SCENE_DIR)/___FILEBASENAME___View.xib
+	cp $(TEMPLATES_DIR)/ExpletiveView.xctemplate/___FILEBASENAME___View.swift $(SCENE_DIR)/___FILEBASENAME___View.swift
+	cp $(TEMPLATES_DIR)/ExpletiveView.xctemplate/___FILEBASENAME___View.xib $(SCENE_DIR)/___FILEBASENAME___View.xib
 
 	mkdir -p $(XCODE_USER_TEMPLATES_DIR)
 	rm -fR $(XCODE_USER_TEMPLATES_DIR)/$(TEMPLATES_DIR)
