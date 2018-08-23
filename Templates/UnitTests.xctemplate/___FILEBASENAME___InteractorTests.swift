@@ -13,41 +13,40 @@
 import XCTest
 import SNPUtilities
 @testable import ___PROJECTNAMEASIDENTIFIER___
+import SwiftyMocky
 
 class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
     // MARK: - Properties
-    var testInteractor: ___VARIABLE_sceneName___Interactor!
+    var interactor: ___VARIABLE_sceneName___Interactor!
     
     // MARK: - Methods
     // MARK: Test lifecycle
     override func setUp() {
         super.setUp()
-        setup___VARIABLE_sceneName___Interactor()
+        interactor = ___VARIABLE_sceneName___Interactor()
     }
     
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func setup___VARIABLE_sceneName___Interactor() {
-        testInteractor = ___VARIABLE_sceneName___Interactor()
-    }
-    
-    // MARK: Mocks
-    class ___VARIABLE_sceneName___PresenterMock: ___VARIABLE_sceneName___PresenterProtocol {
+        interactor = nil
     }
     
     // MARK: - Tests
     func testDoSomething() {
         // Given
-        let mockPresenter = ___VARIABLE_sceneName___PresenterMock()
-        testInteractor.presenter = mockPresenter
-//        let request = ___VARIABLE_sceneName___.Something.Request()
+        // Tip: here we inject "routerMock", "presenterMock" into "interactor"
+        let routerMock = ___VARIABLE_sceneName___RouterProtocolMock()
+        interactor.router = routerMock
+        let presenterMock = ___VARIABLE_sceneName___PresenterProtocolMock()
+        interactor.presenter = presenterMock
         
         // When
-//        testInteractor.doSomething(request: request)
+        //Calling method manually
+        interactor.viewDidLoad()
         
         // Then
-//        XCTAssertTrue(mockPresenter.presentSomethingCalled, "doSomething(request:) should ask the presenter to format the result")
+        // Tip: for Verify, you should drop ".any" for parameter function.
+        Verify(routerMock, .//desired method => navigateToSafari(url: .any))
+        Verify(presenterMock, .//desired method => present(viewModel: .any))
     }
 }

@@ -12,41 +12,33 @@
 
 import XCTest
 @testable import ___PROJECTNAMEASIDENTIFIER___
+import SwiftyMocky
 
 class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
     // MARK: - Properties
-    var testPresenter: ___VARIABLE_sceneName___Presenter!
+    var presenter: ___VARIABLE_sceneName___Presenter!
     
     // MARK: - Methods
     // MARK: Test lifecycle
     override func setUp() {
         super.setUp()
-        setup___VARIABLE_sceneName___Presenter()
+        presenter = ___VARIABLE_sceneName___Presenter()
     }
     
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func setup___VARIABLE_sceneName___Presenter() {
-        testPresenter = ___VARIABLE_sceneName___Presenter()
-    }
-    
-    // MARK: Mocks
-    class ___VARIABLE_sceneName___ViewControllerMock: ___VARIABLE_sceneName___ViewControllerProtocol {
+        presenter = nil
     }
     
     // MARK: - Tests
     func testPresentSomething() {
         // Given
-        let mockViewController = ___VARIABLE_sceneName___ViewControllerMock()
-        testPresenter.viewController = mockViewController
-//        let businessModel = ___VARIABLE_sceneName___.Something.BusinessModel()
+        let viewControllerMock = ___VARIABLE_sceneName___ViewControllerProtocolMock()
+        presenter.viewController = mockViewController
         
         // When
-//        testPresenter.present(businessModel: ___VARIABLE_sceneName___.Something.BusinessModel)
-        
+         //presenter.present(viewModel: viewModel)
         // Then
-//        XCTAssertTrue(mockViewController.displayCalled, "presentSomething(response:) should ask the view controller to display the result")
+        Verify(viewControllerMock, .//desired method => show(viewModel: .any))
     }
 }

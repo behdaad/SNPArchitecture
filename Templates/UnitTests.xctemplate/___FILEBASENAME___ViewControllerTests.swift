@@ -15,58 +15,36 @@ import XCTest
 
 class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
     // MARK: - Properties
-    var testViewController: ___VARIABLE_sceneName___ViewController!
+    var viewController: ___VARIABLE_sceneName___ViewController!
     var window: UIWindow!
     
     // MARK: - Methods
     // MARK: Test lifecycle
     override func setUp() {
         super.setUp()
-        window = UIWindow()
-        setup___VARIABLE_sceneName___ViewController()
+        viewController = ___VARIABLE_sceneName___ViewController()
     }
     
     override func tearDown() {
-        window = nil
         super.tearDown()
+        viewController = nil
     }
-    
-    func setup___VARIABLE_sceneName___ViewController() {
-        let testViewController = ___VARIABLE_sceneName___ViewController()
-        _ = testViewController.view
-    }
-    
-    func loadView() {
-        window.addSubview(testViewController.view)
-        RunLoop.current.run(until: Date())
-    }
-    
-    // MARK: Mocks
-    class ___VARIABLE_sceneName___InteractorMock: ___VARIABLE_sceneName___InteractorProtocol {
-    }
-    
     // MARK: - Tests
-    func testShouldDoSomethingWhenViewIsLoaded() {
+    func test___VARIABLE_sceneName___InteractorExist() {
         // Given
-        let interactorMock = ___VARIABLE_sceneName___InteractorMock()
-        testViewController.interactor = interactorMock
+        let interactorMock = ___VARIABLE_sceneName___ProtocolMock()
         
         // When
-        loadView()
+        viewController.rideInteractor = interactorMock
         
         // Then
-//        XCTAssertTrue(interactorMock.doSomethingCalled, "viewDidLoad() should ask the interactor to do something")
+        XCTAssertNotNil(viewController.___VARIABLE_sceneName___Interactor)
     }
-    
-    func testDisplaySomething() {
+    func testLoadView() {
         // Given
-//        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
-        
         // When
-        loadView()
-//        testViewController.display(viewModel: viewModel)
-        
+        viewController.loadView()
         // Then
-        //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
+        XCTAssertNotNil(viewController.view)
     }
 }
