@@ -17,7 +17,7 @@ class ___VARIABLE_sceneName___Configurator: SNPConfigurator {
     
     // MARK: - Methods
     class func build() -> (___VARIABLE_sceneName___ViewController, ___VARIABLE_sceneName___Interactor) {
-        let viewController = ___VARIABLE_sceneName___ViewController()
+        let viewController: ___VARIABLE_sceneName___ViewController = UIStoryboard.loadViewController()
         let interactor = ___VARIABLE_sceneName___Interactor()
         let presenter = ___VARIABLE_sceneName___Presenter()
         let router = ___VARIABLE_sceneName___Router()

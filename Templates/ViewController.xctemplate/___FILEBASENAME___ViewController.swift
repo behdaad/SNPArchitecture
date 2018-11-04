@@ -23,13 +23,12 @@ class ___VARIABLE_sceneName___ViewController: SNPViewController {
             interactor = newValue
         }
     }
-    private var <#scene#>View: ___VARIABLE_sceneName___View = Bundle.main.load()
+    private var <#scene#>View: ___VARIABLE_sceneName___View {
+        return view as! ___VARIABLE_sceneName___View
+    }
     
     // MARK: - Methods
     // MARK: UIViewController
-    override func loadView() {
-        view = <#scene#>View
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
