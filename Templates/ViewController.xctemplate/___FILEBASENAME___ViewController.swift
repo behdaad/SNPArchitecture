@@ -17,7 +17,7 @@ class ___VARIABLE_sceneName___ViewController: SNPViewController {
     // MARK: - Properties
     var <#scene#>Interactor: ___VARIABLE_sceneName___InteractorProtocol! {
         get {
-            return interactor as! ___VARIABLE_sceneName___InteractorProtocol
+            return interactor as? ___VARIABLE_sceneName___InteractorProtocol
         }
         set {
             interactor = newValue
