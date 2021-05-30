@@ -1,25 +1,5 @@
 # SNPArchitecture
 
-Table of contents:
-
-* [Introduction](#introduction)
-* [Scene](#scene)
-    + [View](#view)
-    + [Interactor](#interactor)
-    + [Presenter](#presenter)
-    + [Configurator](#configurator)
-    + [Router](#router)
-    + [Managers](#managers)
-    + [Dispatch System](#dispatch-system)
-* [Sample Scene: About Snapp*‌!*](#sample-scene--about-snapp----)
-    + [1. View](#1-view)
-    + [2. View Controller](#2-view-controller)
-    + [3. Interactor](#3-interactor)
-    + [4. Presenter](#4-presenter)
-    + [5. Router](#5-router)
-    + [6. Configurator](#6-configurator)
-* [Installation](#installation)
-
 ## Introduction
 
 SNPArchitecture is an iOS app architecture created for iOS apps in [Snapp*‌!*](https://github.com/snapp-cab). This architecture can be used in iOS apps with a large number of Scenes and developers. It is an amalgamation of different iOS app architectures such as [VIPER](https://www.objc.io/issues/13-architecture/viper), [Uber RIBs](https://github.com/uber/RIBs), [MVVM](https://www.objc.io/issues/13-architecture/mvvm) and [Clean Swift](https://clean-swift.com/clean-swift-ios-architecture) based on the principles of [Uncle Bobs’s](https://en.wikipedia.org/wiki/Robert_Cecil_Martin) [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html).
