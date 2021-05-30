@@ -1,5 +1,25 @@
 # SNPArchitecture
 
+Table of contents:
+
+* [Introduction](#introduction)
+* [Scene](#scene)
+    + [View](#view)
+    + [Interactor](#interactor)
+    + [Presenter](#presenter)
+    + [Configurator](#configurator)
+    + [Router](#router)
+    + [Managers](#managers)
+    + [Dispatch System](#dispatch-system)
+* [Sample Scene: About Snapp*‌!*](#sample-scene--about-snapp----)
+    + [1. View](#1-view)
+    + [2. View Controller](#2-view-controller)
+    + [3. Interactor](#3-interactor)
+    + [4. Presenter](#4-presenter)
+    + [5. Router](#5-router)
+    + [6. Configurator](#6-configurator)
+* [Installation](#installation)
+
 ## Introduction
 
 SNPArchitecture is an iOS app architecture created for iOS apps in [Snapp*‌!*](https://github.com/snapp-cab). This architecture can be used in iOS apps with a large number of Scenes and developers. It is an amalgamation of different iOS app architectures such as [VIPER](https://www.objc.io/issues/13-architecture/viper), [Uber RIBs](https://github.com/uber/RIBs), [MVVM](https://www.objc.io/issues/13-architecture/mvvm) and [Clean Swift](https://clean-swift.com/clean-swift-ios-architecture) based on the principles of [Uncle Bobs’s](https://en.wikipedia.org/wiki/Robert_Cecil_Martin) [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html).
@@ -139,7 +159,7 @@ extension AboutViewController {
 }
 ```
 
-Here `AboutViewController ` tells `AboutInteractor` user has tapped the button:
+Here `AboutViewController` tells `AboutInteractor` that user has tapped the button:
 
 ```swift
 extension AboutViewController {      
@@ -290,7 +310,11 @@ In this article you saw the flow of SNPArchitecture in a simple Scene. The `Abou
 
 ## Installation
 
-First you need to add [SNPScene](https://github.com/snapp-cab/SNPScene) pod to your project. 
+First add [SNPScene](https://github.com/snapp-cab/SNPScene) pod to your project:
+
+```ruby
+pod 'SNPScene', :git => 'https://github.com/behdaad/SNPScene.git'
+```
 
 To install SNPArchitecture Xcode templates, first clone this repository, then `cd` to its directory and run:
 
@@ -319,7 +343,7 @@ make install_templates
 chmod +x post-merge
 ```
 
-3. Since it’s not a remote possibility that you’ll someday commit and push changes to this repository, you may want to add a `post-commit` hook too. It will be the same as `post-merge`. This can be simply done using
+3. Then add a `post-commit` hook too. It will be the same as `post-merge`. This can be simply done using:
 
 ```bash
 cp post-merge post-commit
