@@ -6,7 +6,7 @@ SNPArchitecture is an iOS app architecture created for iOS apps in Snapp*!*. Thi
 
 SNPArchitecture provides:
 
-- **An scaleable architecture.** This architecture has proven to scale to tens of engineers working on the same codebase and apps with 50+ Scenes already in production.
+- **An scalable architecture.** This architecture has proven to scale to tens of engineers working on the same codebase and apps with 50+ Scenes already in production.
 
 - **Testability using protocol-oriented design.** It enables dependency injection, which in turn enables testing each class in isolation, since every dependency is autmatically mocked with easy to provide stubs using [SwiftyMocky](https://github.com/MakeAWishFoundation/SwiftyMocky).
 
@@ -72,8 +72,7 @@ In order for you to better understand SNPArchitecture, let's develop the "About 
 
 Here are the screenshots of the about scene:
 
-![About](Screens/About-eng.jpg)
-![About](Screens/About-fa.jpg)
+![About](Screens/About.png)
 
 In this scene, we just want to fetch _About_ text from the network service and navigate to the _Snapp's Terms and Conditions_ web page if the user tap on the Terms button. We will explain each component of the `SNPArchitecture` and its counterpart.
 
@@ -216,7 +215,7 @@ extension AboutViewController: AboutViewControllerProtocol {
 }
 ```
 
-Told you! We always put constants in one place: :]
+We always put constants in one place:
 
 ```swift
 private struct Constants {
@@ -355,8 +354,8 @@ class AboutConfigurator: SNPConfigurator {
     }
 }
 ```
-In this article you see the flow of `SNPArchitecture` in  a simple scene. The `AboutViewController` passes the user tapping event to the `AboutInteractor`. Then it fetches appropriate data and passes it to the `AboutPresenter`. then it formats and prepare data to show in the `AboutViewController` and the cycle is completed. :]
 
+In this article you see the flow of `SNPArchitecture` in a simple scene. The `AboutViewController` passes the user tapping event to the `AboutInteractor`. Then it fetches appropriate data and passes it to the `AboutPresenter`. then it formats and prepare data to show in the `AboutViewController` and the cycle is complete.
 
 ## Installation
 
@@ -372,7 +371,7 @@ To uninstall the Clean Swift Xcode templates, run:
 make uninstall_templates
 ```
 
-Every push to this repository sends an automatic message to `#ios_scrum_team` Slack channel. You need to pull changes and manually apply new templates by running `make install_templates`. This process can be automated by adding a git hook to your local installation of Git.
+You can also create git hooks to automatically install the new version when you commit your changes or merge others' changes.
 
 1. Create a file named `post-merge` under `.git/hooks` and fill it with:
 
