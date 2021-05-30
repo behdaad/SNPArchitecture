@@ -69,7 +69,7 @@ Each Manager is responsible for providing objects of a specific Data Model. Fetc
 
 ### Dispatch System
 
-Since we are developing SNPArchitecture for an eventful and stateful app, traditional delegation and callback patterns won’t accommodate our needs. Consider the state of the `Ride` model. Every change in the ride’s state results in changes all over the appl, so it’s better to use the notification pattern. Since iOS’s own NotificationCenter is a barebone framework, we’ll use [SwiftNotificationCenter](https://cocoapods.org/pods/SwiftNotificationCenter) which provides a simple API to post and observe notifications in a protocol-friendly manner. 
+Since we are developing SNPArchitecture for an eventful and stateful app, traditional delegation and callback patterns won’t accommodate our needs. Consider the state of the `Ride` model. Every change in the ride’s state results in changes all over the appl, so it’s better to use the notification pattern. Since iOS’s own NotificationCenter is a barebone framework, we’ll use [SwiftNotificationCenter](https://github.com/100mango/SwiftNotificationCenter) which provides a simple API to post and observe notifications in a protocol-friendly manner. 
 
 ## Sample Scene: About Snapp*‌!*
 
@@ -290,7 +290,7 @@ In this article you saw the flow of SNPArchitecture in a simple Scene. The `Abou
 
 ## Installation
 
-First add [SNPScene](https://github.com/snapp-cab/SNPScene) pod to your project:
+First add [SNPScene](https://github.com/behdaad/SNPScene) pod to your project:
 
 ```ruby
 pod 'SNPScene', :git => 'https://github.com/behdaad/SNPScene.git'
