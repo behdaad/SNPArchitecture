@@ -9,7 +9,7 @@ There have been many efforts to implement [Uncle Bob](https://en.wikipedia.org/w
 To put it in simple terms, it is a combination of VIPER and RIBs, so if you're familiar with VIPER, you should be able to grasp it comfortably. Reading [Clean Swift](http://clean-swift.com/clean-swift-ios-architecture) is a good first step, because most of the notions are the same.
 The key difference is SNPArchitecture's use of `VIP Cycle`.
 
-![VIP Cycle](screens/VIP-Cycle.png)
+![VIP Cycle](Screens/SNPArchitecture.png)
 
 ## Components
 
