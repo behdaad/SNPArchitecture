@@ -1,23 +1,26 @@
 # SNPArchitecture
 
-Here lies the architectural foundation for the years to come, for the generations to come. Take a moment and pay respect to our fallen brothers and sisters, whom had been beaten, broken and scarred, but paved the way on which we tread today.
+## Introduction
 
-## Quick Start
+SNPArchitecture is an iOS app architecture created for iOS apps in Snapp*!*. This architecture can be used in iOS apps with a large number of Scenes and developers. It is an amalgamation of different iOS app architectures such as [VIPER](https://www.objc.io/issues/13-architecture/viper), [Uber RIBs](https://github.com/uber/RIBs), [MVVM](https://www.objc.io/issues/13-architecture/mvvm) and [Clean Swift](https://clean-swift.com/clean-swift-ios-architecture) based on the principles of [Uncle Bobs's](https://en.wikipedia.org/wiki/Robert_Cecil_Martin) [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html).
 
-There have been many efforts to implement [Uncle Bob](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)'s [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) such as [VIPER](https://www.objc.io/issues/13-architecture/viper/) and Uber's [RIBs](https://github.com/uber/RIBs) but none of them were suitable for Snapp's current situation. Therefore, we decided to come up with our own, not giving it a particular name merely calling it `SNPArchitecture`.
+SNPArchitecture provides:
 
-To put it in simple terms, it is a combination of VIPER and RIBs, so if you're familiar with VIPER, you should be able to grasp it comfortably. Reading [Clean Swift](http://clean-swift.com/clean-swift-ios-architecture) is a good first step, because most of the notions are the same.
-The key difference is SNPArchitecture's use of `VIP Cycle`.
+- **An scaleable architecture.** This architecture has proven to scale to tens of engineers working on the same codebase and apps with 50+ Scenes already in production.
 
-![VIP Cycle](Screens/SNPArchitecture.png)
+- **Testability using protocol-oriented design.** It enables dependency injection, which in turn enables testing each class in isolation, since every dependency is autmatically mocked with easy to provide stubs using [SwiftyMocky](https://github.com/MakeAWishFoundation/SwiftyMocky).
 
-## Components
+- **Code generation using Xcode template.** It comes with Xcode templates for quick code generation. Developers only provide a name for the Scene and almost all (due to Xcode's Template system limitations) biolerplate code is automatically generated.
+
+## Scene
 
 An app is divided to modules based on screen/feature, which we'll call a `Scene`. A scene is comprised of these classes: View, Interactor, Presenter, Router and Configurator.
 
 View handles view logic, Interactor handles business logic, Presenter handles presentation logic, Router handles routing logic and Configurator will act as the interface of the Scene. We'll discuss all of them shortly.
 
 Keep in mind that all the interaction between classes in a scene happens through protocols and none of them are tightly coupled. 
+
+![VIP Cycle](Screens/SNPArchitecture.png)
 
 ### View
 
@@ -53,11 +56,11 @@ Configurator acts as the interface for creating a scene. It has a static `build(
 
 Router is responsible for routing logic, it knows how to build a Scene. It creates the next Scene and attaches its View to the View hierarchy. Interactor calls methods such as `routeToSomeScene(presentingViewController:)` on the Router, Router builds the next using its Configurator by calling `SomeSceneConfigurator.build()` and attaching the resulting View to the View hierarchy. Remember that the Router itself doesn't decide which Scene to build, but merely how to build it. Routing decisions are made by the Interactor. 
 
-### Behind the Scenes: Managers
+### Managers
 
-Although managers aren't usually behind the scenes and always want the spotlight, but in SNPArchitecture there are some classes that don't belong in Scenes: Model Managers. Will call them Managers for short. 
+In SNPArchitecture there are some classes that don't belong in Scenes: Model Managers. Will call them `Manager` for short. 
 
-Each Manager is responsible for addressing issues related to that class. Fetching it from network, probably caching the result and providing it to anyone who asks for it later. Manager's methods will take the form of `model(parameters:completion:)`. They input required input and call a completion handler when data is ready or an error has occurred. Most of completion handlers will have only a `Error?` input, since providing data models will be mainly from a dispatch system.
+Each Manager is responsible for addressing issues related to that model. Fetching it from network, probably caching the result and providing it to anyone who asks for it later. Manager's methods will take the form of `model(parameters:completion:)`. They input required input and call a completion handler when data is ready or an error has occurred. Most of completion handlers will have only a `Error?` input, since providing data models will be mainly from a dispatch system.
 
 ### Dispatch System
 
@@ -229,7 +232,6 @@ private struct Constants {
     }
 }
 ```
-
 
 
 ### 3. Interactor
