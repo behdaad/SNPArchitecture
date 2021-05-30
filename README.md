@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SNPArchitecture is an iOS app architecture created for iOS apps in Snapp*!*. This architecture can be used in iOS apps with a large number of Scenes and developers. It is an amalgamation of different iOS app architectures such as [VIPER](https://www.objc.io/issues/13-architecture/viper), [Uber RIBs](https://github.com/uber/RIBs), [MVVM](https://www.objc.io/issues/13-architecture/mvvm) and [Clean Swift](https://clean-swift.com/clean-swift-ios-architecture) based on the principles of [Uncle Bobs's](https://en.wikipedia.org/wiki/Robert_Cecil_Martin) [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html).
+SNPArchitecture is an iOS app architecture created for iOS apps in Snapp*‌!*. This architecture can be used in iOS apps with a large number of Scenes and developers. It is an amalgamation of different iOS app architectures such as [VIPER](https://www.objc.io/issues/13-architecture/viper), [Uber RIBs](https://github.com/uber/RIBs), [MVVM](https://www.objc.io/issues/13-architecture/mvvm) and [Clean Swift](https://clean-swift.com/clean-swift-ios-architecture) based on the principles of [Uncle Bobs's](https://en.wikipedia.org/wiki/Robert_Cecil_Martin) [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html).
 
 SNPArchitecture provides:
 
@@ -66,15 +66,15 @@ Each Manager is responsible for addressing issues related to that model. Fetchin
 
 Since we are developing SNPArchitecture for an eventful and stateful app, traditional delegation and callback patterns won't accomodate our needs. Consider the state of the `Ride` model. Every change in ride's state results in changes all over the application, so it's better to use the notification pattern. Since iOS's own NotificationCenter is a barebone framework, we'll use [SwiftNotificationCenter](https://cocoapods.org/pods/SwiftNotificationCenter) which provices a simple API to post and observe notifications in a protocol-friendly manner. 
 
-## Sample Scene: About Snapp
+## Sample Scene: About Snapp*‌!*
 
-In order for you to better understand SNPArchitecture, let's develop the "About Snapp" scene in the Passenger app together. 
+In order for you to better understand SNPArchitecture, let's develop the "About Snapp*‌!*" scene in the Passenger app together. 
 
 Here are the screenshots of the about scene:
 
 ![About](Screens/About.png)
 
-In this scene, we just want to fetch _About_ text from the network service and navigate to the _Snapp's Terms and Conditions_ web page if the user tap on the Terms button. We will explain each component of the `SNPArchitecture` and its counterpart.
+In this scene, we just want to fetch _About_ text from the network service and navigate to the _Snapp_!'s _Terms and Conditions_ web page if the user tap on the Terms button. We will explain each component of the `SNPArchitecture` and its counterpart.
 
 ### 1. View
 The AboutView is as dummy as possible and knows nothing about other components of the app. Let's dive in.
@@ -146,7 +146,7 @@ To be orgnized we gather raw strings in one place. We'll stick to this approach 
 private struct Constants {
     static let logo = UIImage(named: "aboutUsLogo")
     static var terms: String {
-        return NSLocalizedString("Snapp's Terms and Conditions", comment: "Snapp's Terms and Conditions")
+        return NSLocalizedString("Snapp*‌!*'s Terms and Conditions", comment: "Snapp*‌!*'s Terms and Conditions")
     }
 }
 ```
